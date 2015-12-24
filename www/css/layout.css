@@ -1,0 +1,60 @@
+/*
+	This style would help to make a correct proportions of the vertical space
+	This tags MUST be inside
+	<ion-content class="padding" scroll="false">
+*/
+
+.vertical_content_10{
+	height: 10%;
+}
+
+.vertical_content_15{
+	height: 15%;
+}
+.vertical_content_20{
+	height: 20%;
+}
+.vertical_content_30{
+	height: 30%;
+}
+.vertical_content_40{
+	height: 40%;
+}
+.vertical_content_50{
+	height: 50%;
+}
+.vertical_content_60{
+	height: 60%;
+}
+.vertical_content_70{
+	height: 70%;
+}
+.vertical_content_80{
+	height: 80%;
+}
+.vertical_content_90{
+	height: 90%;
+}
+.vertical_content_100{
+	height: 100%;
+}
+
+.vertical_content_half{
+	height: 50%;
+}
+.vertical_content_full{
+	height: 100%;
+}
+
+.col-12{width:100%}
+.col-11{width:91.66666667%}
+.col-10{width:83.33333333%}
+.col-9{width:75%}
+.col-8{width:66.66666667%}
+.col-7{width:58.33333333%}
+.col-6{width:50%}
+.col-5{width:41.66666667%}
+.col-4{width:33.33333333%}
+.col-3{width:25%}
+.col-2{width:16.66666667%}
+.col-1{width:8.33333333%}

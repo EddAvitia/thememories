@@ -1,0 +1,39 @@
+<ion-view view-title="Options" name="options-view" class="welcome-view">
+	<ion-content class="padding randImage" cog-block-size="cover" scroll="false" ng-style="randImage"></ion-content>
+	<ion-content class="padding" scroll="false" ng-controller="OptionsController">
+		<div class="vertical_content_10 row">
+			<div class="app-copy col col-top">
+				<h1 class="app-logo">
+					<img style="width:50%" src="img/logo.png" />
+				</h1>
+			</div>
+		</div>
+		
+		<div class="vertical_content_60 row"></div>
+		
+		<div class="vertical_content_30 row">
+		
+			<!--<div class="col-1 col-bottom"></div> !-->
+			<div class="col-3 col-bottom">
+				<a class="btn_circle" ng-click="getPhotoFromFiles()"  ng-disabled="sending">
+					<img class="img-responsive" src="img/btn_files.png" />
+				</a>
+			</div>
+			<div class="col-1 col-bottom"></div>
+			<div class="col-4 col-bottom">
+				<a class="btn_circle" ng-click="getPhotoFromCamera()"  ng-disabled="sending">
+					<img style="margin-bottom: -5px;" class="img-responsive" src="img/btn_cam.png" />
+				</a>
+			</div>
+			<div class="col-1 col-bottom"></div>
+			<div class="col-3 col-bottom">
+				<a class="btn_circle" ng-click="goToProfile()"  ng-disabled="sending">
+					<img class="img-responsive" src="img/btn_profile.png" />
+				</a>
+			</div>
+			<!--<div class="col-1 col-bottom"></div> !-->
+			
+		</div>
+	  
+	</ion-content>
+</ion-view>

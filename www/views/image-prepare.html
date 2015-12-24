@@ -1,0 +1,30 @@
+<ion-view view-title="ImagePrepare" name="imagepepare-view" class="imageprepare-view">
+	<ion-content scroll="false" ng-controller="ImagePrepareController">
+		<div class="vertical_content_90 row photoImage" ng-style="photoImage">
+			<div class="app-copy col col-top" style="position: absolute;">
+				<h1 class="app-logo">
+					<img style="width:50%" src="img/logo.png" />
+				</h1>
+
+			</div>
+			
+			<div class="app-copy col col-bottom">
+				<input type="text" id="photo_description" ng-model="data.description" placeholder="Insert a title.." />
+			</div>
+			
+		</div>
+		
+		<div class="vertical_content_10 row">
+		
+			<div class="col-6 col-bottom">
+				<button class="button button-block button-rect" ng-click="cancel()" ng-disabled="sending" >Back</button>
+			</div>
+			
+			<div class="col-6 col-bottom">
+				<button class="button button-block button-memory button-rect" ng-click="send()" ng-disabled="sending">Send</button>
+			</div>
+			
+		</div>
+	  
+	</ion-content>
+</ion-view>

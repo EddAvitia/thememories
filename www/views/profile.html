@@ -1,0 +1,91 @@
+<ion-view view-title="Profile" name="profile-view" class="profile-view">
+	<ion-content>
+		<div class="vertical_content_20 row header_profile">
+			<div class="app-copy col col-top" style="position: absolute;">
+				<h1 class="app-logo">
+					<img style="width:50%" src="img/logo.png" />
+				</h1>
+
+			</div>
+		</div>
+		
+		<div class="list list-inset padding list_profile" style="margin-top: 30px;">
+			<label class="item item-input">
+				<i class="icon ion-ios-person-outline placeholder-icon"></i>
+				<input type="text" placeholder="First Name" ng-model="data.first_name">
+			</label>
+			<br/>
+			
+			<label class="item item-input">
+				<i class="icon ion-ios-person-outline placeholder-icon"></i>
+				<input type="text" placeholder="Last Name" ng-model="data.last_name">
+			</label>
+			<br/>
+			
+			<label class="item item-input">
+				<i class="icon ion-ios-email-outline placeholder-icon"></i>
+				<input type="email" placeholder="Your Email" ng-model="data.user_email" disabled>
+			</label>
+			<br/>
+
+			<label class="item item-input">
+				<i class="icon ion-ios-locked-outline placeholder-icon"></i>
+				<input type="password" placeholder="Current Password" ng-model="data.current_password">
+			</label>
+			<br/>
+			
+			<label class="item item-input">
+				<i class="icon ion-ios-unlocked-outline placeholder-icon"></i>
+				<input type="password" placeholder="New Password" ng-model="data.new_password">
+			</label>
+			<br/>
+	
+			<label class="item item-input">
+				<i class="icon ion-ios-unlocked-outline placeholder-icon"></i>
+				<input type="password" placeholder="Confirm Password" ng-model="data.confirm_password">
+			</label>
+			<br/>
+			
+			<div class="toggle-wrapper">
+				<ion-toggle class="meds-toggle"
+							toggle-class="toggle-positive"
+							ng-model="data.gender"
+							ng-checked="data.gender">
+				  <div class="toggle-text">Gender: <b>{{data.gender ? "Female": "Male"}}</b></div>
+				</ion-toggle>
+			</div>
+  
+			<div class="toggle-wrapper">
+				<div style="margin-left: 16px;">
+					<label>Date of Birth: <input type="date" ng-model="birth.value" /></label>
+				</div>
+			</div>
+			<br/>
+
+			<div class="toggle-wrapper">
+				<ion-toggle class="meds-toggle"
+							toggle-class="toggle-positive"
+							ng-model="data.who_can_view"
+							ng-checked="data.who_can_view">
+				  <div class="toggle-text">Who view my profile: <b>{{data.who_can_view ? "Everyone": "Friends"}}</b></div>
+				</ion-toggle>
+			</div>
+			<br/>
+		</div>
+		
+
+		<div class="vertical_content_10 row">
+		
+			<div class="col-6 col-bottom">
+				<button class="button button-block button-rect" ng-click="cancel()">Cancel</button>
+			</div>
+			
+			<div class="col-6 col-bottom">
+				<button class="button button-block button-memory button-rect" ng-click="update()" ng-disabled="sending">Update</button>
+			</div>
+			
+		</div>
+	  
+	  
+	</ion-content>
+</ion-view>
